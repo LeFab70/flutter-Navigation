@@ -35,6 +35,10 @@ class Mydrawer extends StatelessWidget {
             title: Text("Météo",style:TextStyle(fontSize: 25)),
             leading: Icon(Icons.sunny_snowing,color: Colors.green,size:30),
             trailing: Icon(Icons.arrow_right_sharp,color: Colors.deepOrangeAccent,size: 30,),
+            onTap: (){
+              Navigator.of(context).pop();
+              Navigator.pushNamed(context,"/meteo");
+            },
           ),
           Divider(
             color: Colors.deepOrange,
@@ -44,6 +48,27 @@ class Mydrawer extends StatelessWidget {
             title: Text("Gallery",style:TextStyle(fontSize: 25)),
             leading: Icon(Icons.picture_in_picture,color: Colors.blue,size:30),
             trailing: Icon(Icons.arrow_right_sharp,color: Colors.deepOrangeAccent,size: 30,),
+            onTap: (){
+              Navigator.of(context).pop();
+              Navigator.pushNamed(context,"/gallery");
+
+            },
+          ),
+
+
+          Divider(
+            color: Colors.deepOrange,
+            thickness: 0.1,
+          ),
+          ListTile(
+            title: Text("Counter",style:TextStyle(fontSize: 25)),
+            leading: Icon(Icons.countertops,color: Colors.blue,size:30),
+            trailing: Icon(Icons.arrow_right_sharp,color: Colors.deepOrangeAccent,size: 30,),
+            onTap: (){
+              Navigator.of(context).pop();
+              Navigator.pushNamed(context,"/counter");
+
+            },
           )
         ],
       ),
