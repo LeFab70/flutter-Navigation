@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:navigation_app/ui/widgets/MyDrawer.dart';
+import 'package:navigation_app/ui/widgets/myDrawer.dart';
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
 
@@ -9,10 +9,10 @@ class HomePage extends StatelessWidget {
           drawer: Mydrawer(),
           appBar: AppBar(
             title: Text("My App"),
-            backgroundColor: Colors.deepOrangeAccent,
+            // backgroundColor: Colors.deepOrangeAccent,
           ),
           body: Center(
-            child: Text("Home page", style: TextStyle(fontSize: 30),
+            child: Text("Home page", style: Theme.of(context).textTheme.headlineMedium,
               textAlign: TextAlign.center,),
           )
 
